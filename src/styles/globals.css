@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -14,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #090909;
     --foreground: #ededed;
   }
 }
@@ -23,4 +26,50 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropDown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: column;
+}
+.refreshBtn {
+  width: 204px;
+  height: 56px;
+  cursor: pointer;
+  background-color: #eb0237;
+  border-radius: solid;
+}
+
+.refresh {
+  padding: 42px 42px 0;
+  max-width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.commands {
+  height: 65px;
+  max-width: 100%;
+  margin-bottom: 16px;
+  background-color: rgb(33, 36, 39);
+}
+
+.commandBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.abc {
+  padding: 20px;
+  align-content: center;
+  align-items: center;
 }
