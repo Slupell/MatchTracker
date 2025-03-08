@@ -53,7 +53,7 @@ body {
 }
 
 .commands {
-  height: 65px;
+  height: 87px;
   max-width: 100%;
   margin-bottom: 16px;
   background-color: rgb(33, 36, 39);
@@ -71,5 +71,48 @@ body {
 .abc {
   padding: 20px;
   align-content: center;
+  align-items: center;
+}
+
+.statusLive {
+  display: flex;
+  justify-content: center;
+  background-color: #43ad28;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 6px 2px 6px 2px;
+  width: 92px;
+  height: 27px;
+  align-items: center;
+}
+.statusFinished {
+  display: flex;
+  justify-content: center;
+  background-color: #eb0237;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 6px 2px 6px 2px;
+  align-items: center;
+  width: 92px;
+  height: 27px;
+}
+.statusPreparing {
+  display: flex;
+  justify-content: center;
+  background-color: #eb6402;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 6px 2px 6px 2px;
+  align-items: center;
+  width: 92px;
+  height: 27px;
+}
+
+.statusBar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   align-items: center;
 }
