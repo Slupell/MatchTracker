@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# MatchTracker App
 
-## Getting Started
+Это приложение позволяет пользователям получить результаты игр на 7 игр, в результат игра попадает: Статус матча(Игра завершена/Идёт/Подготовка), финальный счёт игры.
 
-First, run the development server:
+## Инструкция по установке и запуску
+
+### 1. Клонирование репозитория
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/Slupell/MatchTracker.git
+  cd your-repository-name
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Установка зависимостей
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 3. Настройка переменных окружения
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Для работы с API необходим API-ключ, добавьте его в `.env.local` файл в корне проекта
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```json
+NEXT_PUBLIC_ORGANIZATION_URL=your_api_key
+```
 
-## Learn More
+Замените `Подставьте ваш Api` на ваш реальный API-ключ.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Запуск проекта
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Основные функции приложения
 
-## Deploy on Vercel
+- Добавление городов : Введите название города и нажмите "Get weather".
+- Выбор типа данных : Выберите тип данных для графика (температура, давление, влажность, скорость ветра и т.д.).
+- Изменение гранулярности : Переключайтесь между гранулярностью "3 часа" и "день".
+- Удаление городов : Нажмите кнопку "Remove" рядом с городом, чтобы удалить его из списка.
+- Сравнение городов : Добавьте несколько городов для визуального сравнения их погодных данных.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Технологии
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Фреймворк : React + TypeScript
