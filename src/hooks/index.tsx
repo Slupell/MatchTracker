@@ -14,9 +14,9 @@ export const useFetch = () => {
       const response = await axios.get(`${baseUrl}`);
       const data = response.data;
       setGames(data.data.matches);
-      console.log(data.data.matches);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Произошла ошибка");
+      setError(null);
+    } catch {
+      setError("Произошла ошибка при поиске данных");
     } finally {
       setLoading(false);
     }
