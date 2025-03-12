@@ -5,7 +5,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export const useFetch = () => {
-  const [games, setGames] = useState<Matches[] | null>(null);
+  const [games, setGames] = useState<Matches[]>([]);
   const [loading, setLoading] = useState(true);
   const [err, setError] = useState<string | null>(null);
 

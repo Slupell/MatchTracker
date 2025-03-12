@@ -1,14 +1,17 @@
-import { useFetch } from "@/hooks";
-import { ButtonRefresh } from "../Button";
-import { CommandBlocks } from "../CommandBlocks";
+// сделать allies
+// Попробовать вынести кнопку в children
+
+import { Button } from "@/components/Button";
+import { CommandBlocks } from "@/components/CommandBlocks";
+import { ContextProvider } from "@/components/MatchProvider";
 
 export const MatchTracker: React.FC = () => {
-  const { games, fetchData, err } = useFetch();
-
   return (
-    <div>
-      <ButtonRefresh fetchData={fetchData} err={err} />
-      <CommandBlocks games={games} />
-    </div>
+    <>
+      <ContextProvider>
+        <Button />
+        <CommandBlocks />
+      </ContextProvider>
+    </>
   );
 };
