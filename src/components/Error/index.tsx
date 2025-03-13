@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const ErrorFile = () => {
   return (
-    <div className="flex gap-[12px] w-[480px] h-[56px] flex-row content-between items-center justify-center bg-[#0F1318] rounded-sm ">
+    <div className="flex gap-[12px] w-[480px] h-[56px] flex-row content-between items-center justify-center bg-black-error rounded-sm ">
       <Image
         src="/alertTriangle.svg"
         alt="alertTriangle"

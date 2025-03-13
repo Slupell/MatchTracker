@@ -13,7 +13,7 @@ export const Button: React.FC = () => {
         {err && <ErrorFile />}
         <button
           onClick={fetchData}
-          className="w-[204px] h-[56px] rounded-sm cursor-pointer  bg-[#eb0237] gap-[10px] flex flex-row-reverse content-end items-center justify-center "
+          className="w-[204px] h-[56px] rounded-sm cursor-pointer  bg-raspberry-100 gap-[10px] flex flex-row-reverse content-end items-center justify-center hover:bg-raspberry-200 active:bg-raspberry-300 "
         >
           {loading ? (
             <Image
@@ -21,7 +21,7 @@ export const Button: React.FC = () => {
               alt="refresh"
               width={26}
               height={26}
-              className="transition-all duration-1000 animate-spin w-[26px] h-[26px]"
+              className="transition-all duration-1000 animate-spin w-[26px] h-[26px] "
             />
           ) : null}
           Обновить

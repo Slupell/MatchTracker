@@ -13,7 +13,7 @@ export const CommandBlocks = () => {
       {games.map((item: Matches, index: number) => (
         <ul
           key={index}
-          className="h-[87px] max-w-full mb-4 bg-[#212427] rounded-sm "
+          className="h-[87px] max-w-full mb-4 bg-black-cards rounded-sm "
         >
           <div className="flex flex-wrap items-center justify-between p-4 content-end">
             <div className="flex  justify-center items-center content-between gap-[14px] flex-row-reverse">
